@@ -1,38 +1,113 @@
-.App {
+.nav-menu{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  padding: 0 30px;
+  background-color: #EDEFEE;
+}
+.nav-el{
+  flex-basis: 14vw;
+  min-width: 14vw;
+  min-height: 100%;
+}
+li{
+  flex-basis: 14vw;
+  min-width: 14vw;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li:first-child{
+  background-image: url(../icons_assets/Logo.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.herosection{
+  min-height: 600px;
+  width: 100%;
+  background-color: #FDDABB;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero-left{
   display: flex;
   flex-direction: column;
+}
+.hero-left h1, h2{
+  padding-left: 50px;
+}
+.hero-left h1{
+  font-size: 50px;
+}
+.hero-left h2{
+  font-size: 30px;
+}
+.hero-left a{
+  text-decoration: none;
+  margin-top: 120px;
+  align-self: center;
+  padding: 20px 30px;
+  border-radius: 5px;
+  background-color: #333333;
+  color: #FDDABB;
+}
+.hero-right{
+  width: 90%;
+  height: 90%;
+  background-image: url(../icons_assets/restauranfood.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.specialssection{
+  min-height: 650px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.specialsup{
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0 100px;
 }
+.specialsup h1{
+  font-size: 50px;
+}
+.specialsup a{
+  text-decoration: none;
+  padding: 20px 30px;
+  border-radius: 5px;
+  background-color: #333333;
+  color: #FDDABB;
+}
+.specialsdown{
+  flex-grow: 1;
+  display: flex;
+}
+.highlitscard{
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.card-image{}
+.card-nameprice{}
+.card-name{}
+.card-price{}
+.card-discr{}
