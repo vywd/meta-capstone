@@ -1,8 +1,10 @@
 import React from 'react'
 import HighlitsCard from './HighlitsCard'
-import data from './specials.json'
+//import data from './specials.json'
 
 const Specials = () => {
+const data = require('./specials.json')
+
   return (
     <section className='specialssection'>
         <div className='specialsup'>

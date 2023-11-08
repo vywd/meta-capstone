@@ -1,16 +1,16 @@
 [
     {
-        "img": "../icons_assets/greek salad.jpg",
+        "img": "./icons_assets/greek salad.jpg",
         "name": "Greek salad",
         "price": 12.99,
         "discr": "A Greek salad, also known as horiatiki salad, is a traditional Greek salad made with fresh tomatoes, cucumbers, onions, olives, and feta cheese. It is typically seasoned with salt, pepper, and oregano, and dressed with olive oil."
     },{
-        "img": "../icons_assets/bruchetta.jpg",
-        "name": "Bruscueta",
+        "img": "./icons_assets/bruchetta.svg",
+        "name": "Bruscuetta",
         "price": 5.99,
         "discr": "Bruschetta is an Italian appetizer consisting of grilled bread topped with a variety of ingredients, such as tomatoes, basil, garlic, olive oil, and cheese. It is a simple dish to make, but it is full of flavor."
     },{
-        "img": "../icons_assets/lemon dessert.jpg",
+        "img": "./icons_assets/lemon dessert.jpg",
         "name": "Desert",
         "price": 5.00,
         "discr": "A lemon dessert is a sweet dish that typically features lemon as a primary ingredient. Lemon desserts can be made in a variety of ways, but they often have a tart and tangy flavor."

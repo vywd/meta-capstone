@@ -30,7 +30,7 @@ li a {
   height: 100%;
   text-align: center;
 }
-li:first-child{
+.nav-menu li:first-child{
   background-image: url(../icons_assets/Logo.svg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -104,10 +104,108 @@ li:first-child{
   display: flex;
 }
 .highlitscard{
-
+  max-width: 30%;
+  max-height: 90%;
+  margin: 30px;
+  padding: 20px;
+  border: #FDDABB 1px solid;
+  border-radius: 10px;
 }
-.card-image{}
-.card-nameprice{}
+.card-image{
+  width: 100%;
+  height: 50%;
+}
+.card-nameprice{
+  display: flex;
+  justify-content: space-between;
+}
 .card-name{}
 .card-price{}
 .card-discr{}
+.customerssay{
+  width: 100%;
+  height: 600px;
+  background-color: #F4CE14;
+}
+.customerssay{
+  display: flex;
+  justify-content: space-around;
+}
+.revcard{
+  width: 20%;
+  height: 70%;
+  margin: 50px;
+  padding: 10px;
+  border: #FDDABB 1px solid;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.stars{}
+.fotoname{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.fotorevcard{
+  height: 150px;
+  width: 150px;
+}
+.namerevcard{}
+.review{}
+
+.chicago{
+  background-color: #FDDABB;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+}
+.chicago h1,p{
+  margin: 0;
+}
+.chicagiLeft{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+.chicagiRight{
+  width: 50%;
+  position: relative;
+}
+.imageOne{
+  width: 320px;
+  height: 380px;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+}
+.imageTwo{
+  width: 320px;
+  height: 380px;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+footer{
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  background-color: #EDEFEE;
+}
+.footerLogo{
+  width: 150px;
+  height: 200px;
+}
+.reservPage{
+  height: calc(100vh - 450px);
+  background-color: #FDDABB;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+

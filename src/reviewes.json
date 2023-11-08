@@ -1,0 +1,21 @@
+[{
+    "stars": "5/5",
+    "image": "./icons_assets/face1.jpg",
+    "name": "Diego",
+    "review": "Wery good!"
+},{
+    "stars": "5/5",
+    "image": "./icons_assets/face2.jpg",
+    "name": "Alex",
+    "review": "Excelent!"
+},{
+    "stars": "5/5",
+    "image": "./icons_assets/face3.jpg",
+    "name": "Marc",
+    "review": "So teasty!"
+},{
+    "stars": "4/5",
+    "image": "./icons_assets/face4.jpg",
+    "name": "Rico",
+    "review": "Small menu"
+}]
