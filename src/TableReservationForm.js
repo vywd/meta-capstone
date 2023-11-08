@@ -10,6 +10,10 @@ const TableReservationForm = () => {
     occasion: "",
   });
 
+  console.log(fetchAPI('11.11.1989')) // script with these api func dont work!!!
+
+const [avaliableTime, setAvaliableTime] = useState(['17:00', '18:00', '19:00', '20:00', '21:00', '22:00'])
+
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData({
@@ -25,6 +29,7 @@ const TableReservationForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className="reservPage">
+        <h1>Booking form</h1>
       <input
         type="text"
         name="name"
@@ -60,27 +65,24 @@ const TableReservationForm = () => {
         value={formData.reservationTime}
         onChange={handleChange}
       /> */}
-      <label for="res-date">Reservation date</label>
+      <label htmlFor="res-date">Reservation date</label>
             <select id="res-date" name="reservationDate" value={formData.reservationDate} onChange={handleChange}>
                 <option>10.11.2023</option>
                 <option>11.11.2023</option>
                 <option>12.11.2023</option>
             </select>
-        <label for="res-time">Reservation time</label>
+        <label htmlFor="res-time">Reservation time</label>
             <select id="res-time" name="reservationTime" value={formData.reservationTime} onChange={handleChange}>
-                <option>17:00</option>
-                <option>18:00</option>
-                <option>19:00</option>
-                <option>20:00</option>
-                <option>21:00</option>
-                <option>22:00</option>
+                {avaliableTime.map((time)=>(
+                    <option>{time}</option>
+                ))}
             </select>
-        <label for="occasion">Occasion</label>
+        <label htmlFor="occasion">Occasion</label>
             <select id="occasion" name="occasion" value={formData.occasion} onChange={handleChange}>
                 <option>Birthday</option>
                 <option>Anniversary</option>
             </select>
-      <button type="submit">Make Reservation</button>
+      <button type="submit">Book Now</button>
     </form>
   );
 };
