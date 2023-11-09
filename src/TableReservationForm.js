@@ -10,7 +10,7 @@ const TableReservationForm = () => {
     occasion: "",
   });
 
-  console.log(fetchAPI('11.11.1989')) // script with these api func dont work!!!
+  //console.log(fetchAPI('11.11.1989')) // script with these api func dont work!!!
 
 const [avaliableTime, setAvaliableTime] = useState(['17:00', '18:00', '19:00', '20:00', '21:00', '22:00'])
 
@@ -21,6 +21,15 @@ const [avaliableTime, setAvaliableTime] = useState(['17:00', '18:00', '19:00', '
       [name]: value,
     });
   };
+
+  const formVaildation = () => {
+    return (formData.name && 
+      formData.phoneNumber && 
+      formData.numberOfPeople && 
+      formData.reservationDate && 
+      formData.reservationTime && 
+      formData.occasion
+  )}
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -82,7 +91,7 @@ const [avaliableTime, setAvaliableTime] = useState(['17:00', '18:00', '19:00', '
                 <option>Birthday</option>
                 <option>Anniversary</option>
             </select>
-      <button type="submit">Book Now</button>
+      <button type="submit" disabled={!formVaildation()} >Book Now</button>
     </form>
   );
 };
